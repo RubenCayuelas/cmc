@@ -1,191 +1,342 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="es">
-	<head>
-		<title>Carpintería Metálica Cayuelas | Priego de Córdoba</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="description" content="Carpintería metálica en Priego de Córdoba. Fabricamos e instalamos puertas metálicas, rejas, estructuras, cancelas y cerramientos de aluminio. Llámenos: 957 54 71 06." />
-		<meta name="keywords" content="carpintería metálica Priego de Córdoba, puertas metálicas, rejas metálicas, estructuras metálicas, cancelas, cerramientos aluminio, cerrajería metálica" />
-		<meta name="robots" content="index, follow" />
-		<link rel="canonical" href="https://www.carpinteriacayuelas.com/" />
-		<!-- Open Graph -->
-		<meta property="og:title" content="Carpintería Metálica Cayuelas | Priego de Córdoba" />
-		<meta property="og:description" content="Carpintería metálica en Priego de Córdoba. Puertas, rejas, estructuras y cerramientos de calidad artesanal." />
-		<meta property="og:type" content="website" />
-		<meta property="og:url" content="https://www.carpinteriacayuelas.com/" />
-		<!-- Structured Data: Local Business -->
-		<script type="application/ld+json">
-		{
-			"@context": "https://schema.org",
-			"@type": "LocalBusiness",
-			"name": "Carpintería Metálica Cayuelas",
-			"description": "Empresa de carpintería metálica en Priego de Córdoba especializada en puertas metálicas, rejas, estructuras y cerramientos de aluminio.",
-			"address": {
-				"@type": "PostalAddress",
-				"streetAddress": "Pol. Ind. las Salinillas, 17",
-				"addressLocality": "Priego de Córdoba",
-				"postalCode": "14800",
-				"addressRegion": "Córdoba",
-				"addressCountry": "ES"
-			},
-			"telephone": "+34957547106",
-			"url": "https://www.carpinteriacayuelas.com",
-			"sameAs": [
-				"https://es-es.facebook.com/carpinteriametalicacayuelas.canalejo",
-				"https://www.instagram.com/carpinteria_metalica_cayuelas_/"
-			]
-		}
-		</script>
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="assets/css/custom.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Carpintería Metálica Cayuelas — Hierro y aluminio en Priego de Córdoba</title>
+    <meta name="description" content="Carpintería metálica, forja y aluminio a medida en Priego de Córdoba desde 1999. Cancelas, rejas, cerramientos, mamparas. Presupuesto sin compromiso en la Subbética y toda Andalucía.">
+    <!-- SEO -->
+    <link rel="canonical" href="https://carpinteriametalicacayuelas.es/">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Carpintería Metálica Cayuelas">
+    <meta name="geo.region" content="ES-CO">
+    <meta name="geo.placename" content="Priego de Córdoba">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:site_name" content="Carpintería Metálica Cayuelas">
+    <meta property="og:title" content="Carpintería Metálica Cayuelas — Hierro y aluminio en Priego de Córdoba">
+    <meta property="og:description" content="Carpintería metálica, forja y aluminio a medida en Priego de Córdoba desde 1999. Cancelas, rejas, cerramientos, mamparas. Presupuesto sin compromiso en la Subbética y toda Andalucía.">
+    <meta property="og:url" content="https://carpinteriametalicacayuelas.es/">
+    <meta property="og:image" content="https://carpinteriametalicacayuelas.es/assets/images/logo.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:alt" content="Logotipo Carpintería Metálica Cayuelas">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Carpintería Metálica Cayuelas — Hierro y aluminio en Priego de Córdoba">
+    <meta name="twitter:description" content="Carpintería metálica, forja y aluminio a medida en Priego de Córdoba desde 1999. Cancelas, rejas, cerramientos, mamparas. Presupuesto sin compromiso en la Subbética y toda Andalucía.">
+    <meta name="twitter:image" content="https://carpinteriametalicacayuelas.es/assets/images/logo.png">
+    <!-- /SEO -->
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+    <link rel="stylesheet" href="assets/css/theme.css">
+    <link rel="stylesheet" href="assets/css/site.css">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+    <style>
+      /* ===================== HOME ===================== */
+      .hero { background: var(--cay-cream); position: relative; overflow: hidden; }
+      .hero .container-wide { display: grid; grid-template-columns: 1.05fr .95fr; gap: clamp(32px,5vw,72px); align-items: center; padding-block: clamp(56px, 7vw, 104px); }
+      .hero h1 { font-weight: var(--fw-black); font-size: clamp(40px, 5.4vw, 72px); line-height: var(--lh-tight); letter-spacing: var(--ls-display); color: var(--cay-black-900); margin: 18px 0 0; }
+      .hero h1 em { font-style: normal; color: var(--cay-red-500); }
+      .hero .lead { font-size: var(--fs-lg); color: var(--cay-ink-700); margin-top: 22px; max-width: 30em; }
+      .hero .cta-row { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 32px; max-width: 443px; }
+      .hero .cta-row .btn-primary { flex: 0 0 auto; }
+      .hero .cta-row .btn-outline { flex: 1 1 auto; justify-content: center; }
+      .hero .trust { display: flex; gap: 22px 52px; margin-top: 38px; flex-wrap: wrap; }
+      .hero .trust .it { display:flex; flex-direction: column; }
+      .hero .trust .n { font-weight: var(--fw-black); font-size: var(--fs-2xl); color: var(--cay-black-900); line-height: 1; }
+      .hero .trust .l { font-size: var(--fs-sm); color: var(--cay-ink-500); margin-top: 4px; }
+      .hero-media { position: relative; }
+      .hero-media .ph { aspect-ratio: 4/5; border-radius: var(--radius-xl); box-shadow: var(--shadow-lg); }
+      .hero-media .tag { position:absolute; left:-14px; bottom:32px; background: var(--cay-yellow-500); color: var(--cay-black-900); font-weight: var(--fw-bold); padding: 12px 18px; border-radius: var(--radius-md); box-shadow: var(--shadow-md); font-size: var(--fs-sm); letter-spacing:.02em; }
+      .hero-media .corner { position:absolute; top:-20px; left:0; right:0; color: var(--cay-yellow-600); justify-content:center; }
+      .hero-media .corner svg { width: 170px; height:auto; opacity:.95; }
 
-		<!-- Page Wrapper -->
-			<div id="page-wrapper">
+      /* Services */
+      .svc { padding-block: clamp(48px, 6vw, 88px); }
+      .svc-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+      .scard { border: 1px solid var(--color-border); border-radius: var(--radius-xl); overflow: hidden; background: #fff; transition: transform var(--dur-2) var(--ease-standard), box-shadow var(--dur-2), border-color var(--dur-2); display:flex; flex-direction:column; }
+      .scard:hover { transform: translateY(-5px); box-shadow: var(--shadow-lg); border-color: var(--cay-ink-300); }
+      .scard .pic { aspect-ratio: 16/11; }
+      .scard .body { padding: 26px 26px 28px; flex:1; display:flex; flex-direction:column; }
+      .scard .ix { display:inline-flex; align-items:center; justify-content:center; width:44px; height:44px; border-radius: 11px; background: var(--cay-yellow-500); color: var(--cay-black-900); margin: -50px 0 16px; box-shadow: var(--shadow-sm); position:relative; }
+      .scard h3 { font-size: var(--fs-xl); font-weight: var(--fw-bold); color: var(--cay-black-900); }
+      .scard ul { list-style:none; margin: 14px 0 0; padding:0; display:flex; flex-direction:column; gap: 9px; }
+      .scard li { display:flex; gap:9px; align-items:flex-start; color: var(--cay-ink-700); font-size: var(--fs-base); }
+      .scard li svg { color: var(--cay-red-500); flex:none; margin-top: 3px; }
+      .scard .more { margin-top: auto; padding-top: 22px; display:inline-flex; align-items:center; gap:7px; font-weight: var(--fw-semibold); color: var(--cay-red-600); }
+      .scard .more svg { transition: transform var(--dur-2); }
+      .scard:hover .more svg { transform: translateX(4px); }
 
-				<!-- Header -->
-					<header id="header" class="alt">
-						<h1><a href="/">Carpintería Metálica Cayuelas</a></h1>
-						<nav>
-							<a href="#menu">Menú</a>
-						</nav>
-					</header>
+      /* Why us */
+      .why { background: var(--cay-cream); padding-block: clamp(48px, 6vw, 88px); }
+      .why-grid { display:grid; grid-template-columns: repeat(4,1fr); gap: 20px; margin-top: 12px; }
+      .wcard { background:#fff; border:1px solid var(--color-border); border-radius: var(--radius-lg); padding: 28px 24px; }
+      .wcard .ic { width:48px; height:48px; border-radius:50%; background: var(--cay-black-800); color: var(--cay-yellow-500); display:grid; place-items:center; margin-bottom:16px; }
+      .wcard h4 { font-size: var(--fs-lg); font-weight: var(--fw-bold); color: var(--cay-black-900); }
+      .wcard p { color: var(--cay-ink-500); font-size: var(--fs-base); margin-top: 8px; }
 
-				<!-- Menu -->
-					<nav id="menu">
-						<div class="inner">
-							<h2>Menú</h2>
-							<ul class="links">
-								<li><a href="/">Inicio</a></li>
-								<li><a href="/metal-doors/">Puertas Metálicas</a></li>
-								<li><a href="/metal-grilles/">Rejas Metálicas</a></li>
-								<li><a href="/metal-structures/">Estructuras Metálicas</a></li>
-								<li><a href="/contact/">Contacto</a></li>
-							</ul>
-							<a href="#" class="close">Cerrar</a>
-						</div>
-					</nav>
+      /* Gallery */
+      .gal { padding-block: clamp(48px, 6vw, 88px); }
+      .gal-head { display:flex; align-items:flex-end; justify-content:space-between; gap:24px; margin-bottom: 32px; flex-wrap:wrap; }
+      .gal-head h2 { font-weight: var(--fw-black); font-size: clamp(28px,3.4vw,42px); color: var(--cay-black-900); letter-spacing: var(--ls-heading); }
+      .gal-grid { display:grid; grid-template-columns: repeat(4, 1fr); grid-auto-rows: 200px; gap: 16px; }
+      .gal-grid .ph { border-radius: var(--radius-lg); }
+      .gal-grid .ph:nth-child(1){ grid-row: span 2; }
+      .gal-grid .ph:nth-child(4){ grid-row: span 2; }
 
-				<!-- Banner -->
-					<section id="banner">
-						<div class="inner">
-							<div class="logo"><span class="icon solid fa-cog"></span></div>
-							<h2>Carpintería Metálica Cayuelas</h2>
-							<p>Herrería, Aluminio y Cerramientos en <strong>Priego de Córdoba</strong></p>
-						</div>
-					</section>
+      @media (max-width: 900px) {
+        .hero .container-wide { grid-template-columns: 1fr; }
+        .hero-media { order:-1; }
+        .svc-grid { grid-template-columns: 1fr; }
+        .why-grid { grid-template-columns: repeat(2,1fr); }
+        .gal-grid { grid-template-columns: repeat(2,1fr); }
+      }
+    </style>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "@id": "https://carpinteriametalicacayuelas.es/#business",
+      "name": "Carpinter\u00eda Met\u00e1lica Cayuelas",
+      "alternateName": "CMC Cayuelas",
+      "description": "Carpinter\u00eda met\u00e1lica, forja y aluminio a medida en Priego de C\u00f3rdoba desde 1999. Cancelas, rejas, barandillas, cerramientos, mamparas y automatismos.",
+      "url": "https://carpinteriametalicacayuelas.es/",
+      "image": "https://carpinteriametalicacayuelas.es/assets/images/logo.png",
+      "logo": "https://carpinteriametalicacayuelas.es/assets/images/logo.png",
+      "telephone": "+34957547106",
+      "email": "cmcayuelas@gmail.com",
+      "foundingDate": "1999",
+      "priceRange": "$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Pol\u00edgono Industrial La Salinilla, nave 17",
+        "addressLocality": "Priego de C\u00f3rdoba",
+        "addressRegion": "C\u00f3rdoba",
+        "postalCode": "14800",
+        "addressCountry": "ES"
+      },
+      "areaServed": [
+        {
+          "@type": "AdministrativeArea",
+          "name": "Subb\u00e9tica Cordobesa"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Provincia de C\u00f3rdoba"
+        },
+        {
+          "@type": "AdministrativeArea",
+          "name": "Andaluc\u00eda"
+        }
+      ],
+      "sameAs": [
+        "https://www.instagram.com/carpinteria_metalica_cayuelas_",
+        "https://es-es.facebook.com/carpinteriametalicacayuelas.canalejo"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Servicios",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Cancelas y herrer\u00eda"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Forja"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Aluminio y cerramientos"
+            }
+          }
+        ]
+      }
+    }
+    </script>
+  </head>
+  <body class="home">
 
-				<!-- Wrapper -->
-					<section id="wrapper">
+    <!-- Header -->
+    <header class="hdr" data-sticky data-screen-label="Home · Header">
+      <div class="container-wide">
+        <a href="./" class="cay-logo" aria-label="Carpintería Metálica Cayuelas">
+          <span class="plaque"></span>
+          <span class="wordmark"><span class="name">Cayuelas</span><span class="sub">Hierro y aluminio</span></span>
+        </a>
+        <nav class="nav">
+          <a href="./" class="active">Inicio</a>
+          <a href="servicios/">Servicios</a>
+          <a href="galeria/">Galería</a>
+          <a href="contacto/">Contacto</a>
+        </nav>
+        <a href="tel:957547106" class="phone"><i class="fa-solid fa-phone" aria-hidden="true"></i> 957 54 71 06</a>
+        <a href="contacto/" class="btn btn-primary">Pide presupuesto</a>
+      </div>
+    </header>
 
-						<!-- About us -->
-							<section id="one" class="wrapper spotlight style1">
-								<div class="inner">
-									<a href="/contact/" class="image"><img src="assets/images/pic01.jpg" alt="Taller de carpintería metálica en Priego de Córdoba" /></a>
-									<div class="content">
-										<h2 class="major">Carpintería Metálica en Priego de Córdoba</h2>
-										<p>Somos <strong>Carpintería Metálica Cayuelas</strong>, empresa con amplia experiencia en <strong>herrería y carpintería metálica en Priego de Córdoba</strong>. Fabricamos e instalamos puertas metálicas, rejas, cancelas, estructuras y cerramientos de aluminio en la Subbética Cordobesa.</p>
-										<a href="/contact/" class="special">Pedir presupuesto</a>
-									</div>
-								</div>
-							</section>
+    <!-- Hero -->
+    <section class="hero" data-screen-label="Home · Hero">
+      <div class="container-wide">
+        <div class="reveal in">
+          <span class="eyebrow">Carpintería de hierro y aluminio · Priego de Córdoba</span>
+          <h1>Hierro y aluminio<br><em>hecho a medida.</em><br></h1>
+          <p class="lead">Cancelas, forja, cerramientos y aluminio para tu casa o negocio. Diseño, fabricación e instalación propia en la Subbética Cordobesa y toda Andalucía. ¿Fuera de la zona? Consultánoslo.</p>
+          <div class="cta-row">
+            <a href="contacto/" class="btn btn-primary">Pide presupuesto gratis</a>
+            <a href="galeria/" class="btn btn-outline">Ver trabajos</a>
+          </div>
+          <div class="trust">
+            <div class="it"><span class="n">+27</span><span class="l">años de oficio</span></div>
+            <div class="it"><span class="n">Andalucía</span><span class="l">y alrededores</span></div>
+            <div class="it"><span class="n">100%</span><span class="l">a medida</span></div>
+          </div>
+        </div>
+        <div class="hero-media reveal in">
+          <div class="ph" data-label="Photo · Forged gate"></div>
+          <div class="tag">Fabricación propia en taller</div>
+          <span class="corner forja-divider"></span>
+        </div>
+      </div>
+    </section>
 
-						<!-- Experience -->
-							<section id="two" class="wrapper alt spotlight style2">
-								<div class="inner">
-									<a href="/contact/" class="image"><img src="assets/images/pic02.jpg" alt="Instalación de rejas y cancelas metálicas en Priego de Córdoba" /></a>
-									<div class="content">
-										<h2 class="major">Calidad artesanal garantizada</h2>
-										<p>Ubicados en el <strong>Polígono Industrial las Salinillas, Priego de Córdoba</strong>, trabajamos con materiales de primera calidad y tratamientos anticorrosión. Atendemos a particulares y empresas en toda la provincia de Córdoba. Nuestros profesionales garantizan acabados de alta calidad en todos los trabajos de <strong>cerrajería metálica</strong> y aluminio.</p>
-										<a href="/contact/" class="special">Contactar</a>
-									</div>
-								</div>
-							</section>
+    <div class="divwrap"><span class="forja-divider"></span></div>
 
-						<!-- Aluminium & enclosures -->
-							<section id="three" class="wrapper spotlight style3">
-								<div class="inner">
-									<a href="/contact/" class="image"><img src="assets/images/pic03.jpg" alt="Cerramientos de aluminio y mamparas en Priego de Córdoba" /></a>
-									<div class="content">
-										<h2 class="major">Aluminio y Cerramientos</h2>
-										<p>Instalamos <strong>cerramientos en aluminio</strong> con sistemas europeos de corredera y abisagrada, con doble acristalamiento y vidrios de seguridad. También fabricamos e instalamos <strong>mallorquinas, persianas y mamparas de baño y ducha</strong> en Priego de Córdoba y alrededores.</p>
-										<a href="/contact/" class="special">Ver más</a>
-									</div>
-								</div>
-							</section>
+    <!-- Services -->
+    <section class="svc" id="servicios">
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="eyebrow">Lo que hacemos</span>
+          <h2>Tres oficios, un mismo taller</h2>
+          <p>Trabajamos el metal de principio a fin: del diseño y la fabricación a la instalación final en tu obra.</p>
+        </div>
+        <div class="svc-grid">
+          <article class="scard reveal">
+            <div class="pic ph" data-label="Photo · Gate"></div>
+            <div class="body">
+              <span class="ix"><i class="fa-solid fa-door-closed" aria-hidden="true"></i></span>
+              <h3>Cancelas y herrería</h3>
+              <ul>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i> Cancelas y puertas a medida</li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i> Rejas, barandillas y vallados</li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i> Automatismos para puertas</li>
+              </ul>
+              <a href="servicios/#cancelas" class="more">Ver sección <i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i></a>
+            </div>
+          </article>
+          <article class="scard reveal">
+            <div class="pic ph" data-label="Photo · Forgework"></div>
+            <div class="body">
+              <span class="ix"><i class="fa-solid fa-hammer" aria-hidden="true"></i></span>
+              <h3>Forja</h3>
+              <ul>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i> Diseño ornamental clásico</li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i> Detalles y piezas únicas</li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i> Restauración y reparación</li>
+              </ul>
+              <a href="servicios/#forja" class="more">Ver sección <i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i></a>
+            </div>
+          </article>
+          <article class="scard reveal">
+            <div class="pic ph" data-label="Photo · Aluminium"></div>
+            <div class="body">
+              <span class="ix"><i class="fa-solid fa-window-maximize" aria-hidden="true"></i></span>
+              <h3>Aluminio y cerramientos</h3>
+              <ul>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i> Correderas y abisagradas</li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i> Mallorquinas y persianas</li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i> Mamparas de baño y ducha</li>
+              </ul>
+              <a href="servicios/#aluminio" class="more">Ver sección <i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-						<!-- Services -->
-							<section id="four" class="wrapper alt style1">
-								<div class="inner">
-									<h2 class="major">Nuestros Servicios</h2>
-									<p>En <strong>Carpintería Metálica Cayuelas</strong> ofrecemos una amplia gama de servicios de <strong>carpintería metálica y cerrajería en Priego de Córdoba</strong>. Fabricamos e instalamos todo tipo de trabajos en metal y aluminio con garantía de calidad.</p>
-									<section class="features">
-										<article>
-											<a href="/metal-doors/" class="image"><img src="assets/images/pic04.jpg" alt="Puertas metálicas a medida en Priego de Córdoba" /></a>
-											<h3 class="major">Puertas Metálicas</h3>
-											<p>Puertas de entrada, garaje, industriales y cancelas metálicas a medida en Priego de Córdoba. Diseño y fabricación propia.</p>
-											<a href="/metal-doors/" class="special">Saber más</a>
-										</article>
-										<article>
-											<a href="/metal-grilles/" class="image"><img src="assets/images/pic05.jpg" alt="Rejas y forja artística en Priego de Córdoba" /></a>
-											<h3 class="major">Rejas Metálicas</h3>
-											<p>Rejas de seguridad para ventanas y jardines. Trabajos de forja artística y herrería tradicional en Priego de Córdoba y la Subbética.</p>
-											<a href="/metal-grilles/" class="special">Saber más</a>
-										</article>
-										<article>
-											<a href="/metal-structures/" class="image"><img src="assets/images/pic06.jpg" alt="Estructuras metálicas para naves y edificios en Priego de Córdoba" /></a>
-											<h3 class="major">Estructuras Metálicas</h3>
-											<p>Estructuras metálicas para naves industriales, pérgolas y marquesinas en Priego de Córdoba. Diseño a medida con garantía.</p>
-											<a href="/metal-structures/" class="special">Saber más</a>
-										</article>
-										<article>
-											<a href="/contact/" class="image"><img src="assets/images/pic07.jpg" alt="Cerramientos de aluminio y mamparas en Priego de Córdoba" /></a>
-											<h3 class="major">Cerramientos y Aluminio</h3>
-											<p>Cerramientos en aluminio, mamparas de baño y ducha, mallorquinas y persianas. Sistemas europeos con doble acristalamiento.</p>
-											<a href="/contact/" class="special">Pedir presupuesto</a>
-										</article>
-									</section>
-									<ul class="actions">
-										<li><a href="/contact/" class="button primary">Solicitar Presupuesto Gratis</a></li>
-									</ul>
-								</div>
-							</section>
+    <!-- Why us -->
+    <section class="why">
+      <div class="container">
+        <div class="sec-head reveal">
+          <span class="eyebrow">Por qué Cayuelas</span>
+          <h2>El metal bien hecho se nota</h2>
+        </div>
+        <div class="why-grid">
+          <div class="wcard reveal">
+            <span class="ic"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></span>
+            <h4>Materiales de calidad</h4>
+            <p>Doble acristalamiento, vidrios de seguridad y sistemas europeos de aluminio.</p>
+          </div>
+          <div class="wcard reveal">
+            <span class="ic"><i class="fa-solid fa-hammer" aria-hidden="true"></i></span>
+            <h4>Fabricación propia</h4>
+            <p>Diseñamos y fabricamos en nuestro taller de Priego: control total de cada pieza.</p>
+          </div>
+          <div class="wcard reveal">
+            <span class="ic"><i class="fa-solid fa-ruler-combined" aria-hidden="true"></i></span>
+            <h4>Medida exacta</h4>
+            <p>Tomamos medidas en tu casa u obra para que todo encaje al milímetro.</p>
+          </div>
+          <div class="wcard reveal">
+            <span class="ic"><i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i></span>
+            <h4>Instalación incluida</h4>
+            <p>Nos encargamos del montaje y la puesta a punto. Tú no te preocupas de nada.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-					</section>
+    <div class="divwrap"><span class="forja-divider"></span></div>
 
-				<!-- Footer -->
-					<section id="footer">
-						<div class="inner">
-							<h2 class="major">Contacta con nosotros</h2>
-							<p>¿Necesitas una <strong>puerta metálica, reja o cerramiento en Priego de Córdoba</strong>? Estamos a tu disposición. Llámanos o escríbenos para solicitar tu presupuesto sin compromiso.</p>
-							<ul class="contact">
-								<li class="icon solid fa-home">
-									Carpintería Metálica Cayuelas<br />
-									Pol. Ind. las Salinillas, 17<br />
-									14800 Priego de Córdoba, Córdoba
-								</li>
-								<li class="icon solid fa-phone"><a href="tel:+34957547106">957 54 71 06</a></li>
-								<li class="icon solid fa-mobile-alt"><a href="tel:+34658767399">658 76 73 99</a></li>
-								<li class="icon brands fa-facebook-f"><a href="https://es-es.facebook.com/carpinteriametalicacayuelas.canalejo" target="_blank" rel="noopener noreferrer">Facebook</a></li>
-								<li class="icon brands fa-instagram"><a href="https://www.instagram.com/carpinteria_metalica_cayuelas_/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-							</ul>
-							<ul class="copyright">
-								<li>&copy; 2026 Carpintería Metálica Cayuelas.</li>
-							</ul>
-						</div>
-					</section>
+    <!-- Gallery -->
+    <section class="gal">
+      <div class="container">
+        <div class="gal-head reveal">
+          <div>
+            <span class="eyebrow">Trabajos recientes</span>
+            <h2>Hecho en Priego, instalado en la Subbética</h2>
+          </div>
+          <a href="galeria/" class="btn btn-outline">Ver toda la galería</a>
+        </div>
+        <div class="gal-grid">
+          <div class="ph reveal" data-label="Forged gate"></div>
+          <div class="ph reveal" data-label="Aluminium window"></div>
+          <div class="ph reveal" data-label="Railing"></div>
+          <div class="ph reveal" data-label="Shower screen"></div>
+          <div class="ph reveal" data-label="Security bar"></div>
+          <div class="ph reveal" data-label="Enclosure"></div>
+        </div>
+      </div>
+    </section>
 
-			</div>
+    <!-- Contact CTA -->
+    <section class="cta" id="contacto">
+      <div class="container">
+        <div class="inner">
+          <div class="reveal">
+            <span class="forja-divider" style="justify-content:flex-start; margin-bottom:22px; color: var(--cay-ink-400);"></span>
+            <h2>¿Tienes un proyecto<br>en mente? <em>Te lo presupuestamos.</em></h2>
+            <p>Cuéntanos qué necesitas —una cancela, cerramiento, mampara o un trabajo de forja— y te damos precio sin compromiso. Trabajamos en la Subbética Cordobesa y toda Andalucía; si estás fuera, consultánoslo y lo vemos.</p>
+          </div>
+          <div class="cta-phones reveal">
+            <a href="tel:957547106"><span class="ic"><i class="fa-solid fa-phone" aria-hidden="true"></i></span><span><span class="t">Taller</span><br><span class="n">957 54 71 06</span></span></a>
+            <a href="tel:658767399"><span class="ic"><i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i></span><span><span class="t">Móvil</span><br><span class="n">658 76 73 99</span></span></a>
+            <a href="mailto:cmcayuelas@gmail.com" style="background:var(--cay-yellow-500);border-color:var(--cay-yellow-500);color:var(--cay-black-900);justify-content:center;font-weight:var(--fw-bold);"><i class="fa-solid fa-envelope" aria-hidden="true"></i> cmcayuelas@gmail.com</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+    <!-- Footer -->
+    <footer class="ft" data-footer></footer>
 
-	</body>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/footer.js"></script>
+  </body>
 </html>

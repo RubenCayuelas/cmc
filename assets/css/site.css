@@ -1,0 +1,89 @@
+/* =========================================================
+   CMC — site.css
+   Shared layout (header, footer, sections, CTA)
+   for all site pages. Requires theme.css.
+   ========================================================= */
+
+/* ---------- Header ---------- */
+.hdr { position: sticky; top: 0; z-index: var(--z-sticky, 100); background: rgba(255,255,255,.86); backdrop-filter: blur(12px); border-bottom: 1px solid transparent; transition: border-color var(--dur-2), box-shadow var(--dur-2); }
+.hdr.scrolled { border-bottom-color: var(--color-border); box-shadow: var(--shadow-sm); }
+.hdr .container-wide { display: flex; align-items: center; gap: 24px; padding-block: 14px; }
+.nav { display: flex; align-items: center; gap: 30px; margin-left: auto; }
+.nav a { font-weight: var(--fw-medium); font-size: var(--fs-base); color: var(--cay-ink-700); position: relative; }
+.nav a:hover { color: var(--cay-black-900); }
+.nav a::after { content:""; position:absolute; left:0; bottom:-6px; height:2px; width:0; background: var(--cay-red-500); transition: width var(--dur-2) var(--ease-standard); }
+.nav a:hover::after, .nav a.active::after { width:100%; }
+.nav a.active { color: var(--cay-black-900); font-weight: var(--fw-semibold); }
+.hdr .phone { display:inline-flex; align-items:center; gap:8px; font-weight: var(--fw-semibold); color: var(--cay-black-900); white-space:nowrap; }
+.hdr .phone i { color: var(--cay-red-500); }
+
+/* ---------- Interior page header ---------- */
+.page-hero { background: var(--cay-cream); position: relative; overflow: hidden; }
+.page-hero .container { padding-block: clamp(48px, 6vw, 92px); }
+.page-hero .crumbs { font-size: var(--fs-sm); color: var(--cay-ink-400); margin-bottom: 18px; display:flex; gap:8px; align-items:center; }
+.page-hero .crumbs a:hover { color: var(--cay-red-600); }
+.page-hero .crumbs span { color: var(--cay-ink-300); }
+.page-hero h1 { font-weight: var(--fw-black); font-size: clamp(36px, 5vw, 64px); line-height: var(--lh-tight); letter-spacing: var(--ls-display); color: var(--cay-black-900); margin-top: 10px; max-width: 16ch; }
+.page-hero h1 em { font-style: normal; color: var(--cay-red-500); }
+.page-hero .lead { font-size: var(--fs-lg); color: var(--cay-ink-700); margin-top: 20px; max-width: 46ch; }
+.page-hero .forja-divider { margin-top: 26px; justify-content: flex-start; color: var(--cay-yellow-600); }
+.page-hero .forja-divider svg { height: 24px; }
+
+/* ---------- Section heading ---------- */
+.sec-head { text-align:center; max-width: 40em; margin: 0 auto 52px; }
+.sec-head .eyebrow { color: var(--cay-red-600); }
+.sec-head h2 { font-weight: var(--fw-black); font-size: clamp(30px,3.6vw,46px); letter-spacing: var(--ls-heading); color: var(--cay-black-900); margin-top: 10px; }
+.sec-head p { color: var(--cay-ink-500); font-size: var(--fs-md); margin-top: 14px; }
+
+/* ---------- Forja divider ---------- */
+.divwrap { padding: 38px 0; display:flex; justify-content:center; }
+.divwrap .forja-divider svg { height: 30px; }
+
+/* ---------- CTA band (contact) ---------- */
+.cta { background: var(--cay-black-900); color:#fff; }
+.cta .inner { display:grid; grid-template-columns: 1.1fr .9fr; gap: clamp(32px,5vw,64px); align-items:center; padding-block: clamp(52px,6vw,92px); }
+.cta h2 { font-weight: var(--fw-black); font-size: clamp(30px,3.6vw,50px); line-height: var(--lh-tight); letter-spacing: var(--ls-display); }
+.cta h2 em { font-style:normal; color: var(--cay-yellow-500); }
+.cta p { color: rgba(255,255,255,.7); font-size: var(--fs-md); margin-top: 18px; max-width: 34em; }
+.cta-phones { display:flex; flex-direction:column; gap: 14px; }
+.cta-phones a { display:flex; align-items:center; gap:14px; background: rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.14); border-radius: var(--radius-lg); padding: 18px 22px; transition: all var(--dur-2); }
+.cta-phones a:hover { background: rgba(255,204,10,.12); border-color: var(--cay-yellow-500); }
+.cta-phones .ic { width:44px; height:44px; border-radius:50%; background: var(--cay-yellow-500); color: var(--cay-black-900); display:grid; place-items:center; flex:none; }
+.cta-phones .t { font-size: var(--fs-xs); letter-spacing:.12em; text-transform:uppercase; color: rgba(255,255,255,.55); }
+.cta-phones .n { font-weight: var(--fw-bold); font-size: var(--fs-xl); }
+
+/* ---------- Footer ---------- */
+.ft { background: var(--cay-black-800); color: rgba(255,255,255,.7); padding-block: 56px 30px; }
+.ft-grid { display:grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 36px; }
+.ft p.desc { margin-top: 18px; max-width: 26em; font-size: var(--fs-sm); }
+.ft h5 { color:#fff; font-size: var(--fs-sm); letter-spacing:.1em; text-transform:uppercase; margin-bottom: 16px; }
+.ft ul { list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:11px; font-size: var(--fs-sm); }
+.ft ul a:hover, .ft li:hover { color:#fff; }
+.ft .ic-row { display:flex; gap:12px; margin-top:18px; }
+.ft .ic-row a { width:40px; height:40px; border-radius:50%; border:1px solid rgba(255,255,255,.2); display:grid; place-items:center; transition: all var(--dur-2); }
+.ft .ic-row a:hover { background: var(--cay-yellow-500); color: var(--cay-black-900); border-color: var(--cay-yellow-500); }
+.ft .row { display:flex; gap:10px; align-items:flex-start; }
+.ft .row i { color: var(--cay-yellow-500); flex:none; margin-top:3px; font-size: 14px; }
+.ft-bottom { border-top:1px solid rgba(255,255,255,.12); margin-top: 40px; padding-top: 22px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; font-size: var(--fs-xs); color: rgba(255,255,255,.5); }
+
+@media (max-width: 900px) {
+  .cta .inner { grid-template-columns: 1fr; }
+  .ft-grid { grid-template-columns: 1fr 1fr; }
+  .nav { display:none; }
+}
+@media (max-width: 1120px) { .nav { gap: 22px; } .hdr .phone { display:none; } }
+
+/* ---------- Icons (Font Awesome, SVG rendered via JS) ---------- */
+/* FA-JS replaces <i> with <svg class="svg-inline--fa">; we target both */
+.hdr .phone i, .hdr .phone .svg-inline--fa { color: var(--cay-red-500); font-size: 16px; }
+.cta-phones .ic { font-size: 18px; }
+.ft .row i, .ft .row .svg-inline--fa { color: var(--cay-yellow-500); font-size: 14px; margin-top: 3px; }
+.ft .ic-row a { font-size: 16px; }
+.page-hero .crumbs i, .page-hero .crumbs .svg-inline--fa { font-size: 11px; }
+.scard .ix { font-size: 20px; }
+.scard li i, .scard li .svg-inline--fa { color: var(--cay-red-500); font-size: 13px; margin-top: 3px; }
+.scard .more i, .scard .more .svg-inline--fa { font-size: 12px; transition: transform var(--dur-2); }
+.scard:hover .more i, .scard:hover .more .svg-inline--fa { transform: translateX(4px); }
+.wcard .ic, .vcard .ic, .ccard .ic { font-size: 20px; }
+.svcrow ul.feat li i, .svcrow ul.feat li .svg-inline--fa { color: var(--cay-red-500); font-size: 13px; margin-top: 3px; }
+.socials a { font-size: 14px; }
