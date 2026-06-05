@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Galería de trabajos — Carpintería Metálica Cayuelas</title>
+    <meta name="description" content="Galería de trabajos: cancelas, forja y aluminio fabricados e instalados por Carpintería Metálica Cayuelas en Priego de Córdoba y la Subbética.">
+    <!-- SEO -->
+    <link rel="canonical" href="https://carpinteriametalicacayuelas.es/galeria/">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Carpintería Metálica Cayuelas">
+    <meta name="geo.region" content="ES-CO">
+    <meta name="geo.placename" content="Priego de Córdoba">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:site_name" content="Carpintería Metálica Cayuelas">
+    <meta property="og:title" content="Galería de trabajos — Carpintería Metálica Cayuelas">
+    <meta property="og:description" content="Galería de cancelas, forja y aluminio fabricados e instalados por Carpintería Metálica Cayuelas en Priego de Córdoba, la Subbética y toda Andalucía.">
+    <meta property="og:url" content="https://carpinteriametalicacayuelas.es/galeria/">
+    <meta property="og:image" content="https://carpinteriametalicacayuelas.es/assets/images/logo.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:alt" content="Logotipo Carpintería Metálica Cayuelas">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Galería de trabajos — Carpintería Metálica Cayuelas">
+    <meta name="twitter:description" content="Galería de cancelas, forja y aluminio fabricados e instalados por Carpintería Metálica Cayuelas en Priego de Córdoba, la Subbética y toda Andalucía.">
+    <meta name="twitter:image" content="https://carpinteriametalicacayuelas.es/assets/images/logo.png">
+    <!-- /SEO -->
+    <link rel="icon" type="image/png" href="../assets/images/logo.png">
+    <link rel="stylesheet" href="../assets/css/theme.css">
+    <link rel="stylesheet" href="../assets/css/site.css">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
+    <style>
+      /* ===================== GALLERY ===================== */
+      .gal { padding-block: clamp(40px,5vw,72px); }
+      .filters { display:flex; gap:10px; justify-content:center; flex-wrap:wrap; margin-bottom: 34px; }
+      .filters button { font-family: var(--font-sans); font-weight: var(--fw-semibold); font-size: var(--fs-sm); padding: 10px 20px; border-radius: var(--radius-pill); border:1.5px solid var(--color-border-strong); background:#fff; color: var(--cay-ink-700); cursor:pointer; transition: all var(--dur-2); }
+      .filters button:hover { border-color: var(--cay-black-800); }
+      .filters button.active { background: var(--cay-black-900); color:#fff; border-color: var(--cay-black-900); }
+      .masonry { columns: 3; column-gap: 16px; }
+      .masonry .item { break-inside: avoid; margin-bottom: 16px; border-radius: var(--radius-lg); overflow:hidden; position:relative; }
+      .masonry .item .ph { width:100%; }
+      .masonry .item.h-s .ph { aspect-ratio: 4/3; }
+      .masonry .item.h-m .ph { aspect-ratio: 1/1; }
+      .masonry .item.h-l .ph { aspect-ratio: 3/4; }
+      .masonry .item .cap { position:absolute; left:0; right:0; bottom:0; padding: 16px; background: linear-gradient(transparent, rgba(14,14,15,.78)); color:#fff; opacity:0; transition: opacity var(--dur-2); display:flex; align-items:center; justify-content:space-between; gap:8px; }
+      .masonry .item:hover .cap { opacity:1; }
+      .masonry .item .cap .t { font-weight: var(--fw-semibold); }
+      .masonry .item .cap .tag { font-size: var(--fs-xs); color: var(--cay-yellow-500); text-transform:uppercase; letter-spacing:.1em; }
+      .masonry .item.hide { display:none; }
+      .note { text-align:center; color: var(--cay-ink-400); font-size: var(--fs-sm); margin-top: 32px; }
+      @media (max-width: 900px) { .masonry { columns: 2; } }
+      @media (max-width: 560px) { .masonry { columns: 1; } }
+    </style>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "LocalBusiness",
+          "@id": "https://carpinteriametalicacayuelas.es/#business",
+          "name": "Carpinter\u00eda Met\u00e1lica Cayuelas",
+          "alternateName": "CMC Cayuelas",
+          "description": "Carpinter\u00eda met\u00e1lica, forja y aluminio a medida en Priego de C\u00f3rdoba desde 1999. Cancelas, rejas, barandillas, cerramientos, mamparas y automatismos.",
+          "url": "https://carpinteriametalicacayuelas.es/",
+          "image": "https://carpinteriametalicacayuelas.es/assets/images/logo.png",
+          "logo": "https://carpinteriametalicacayuelas.es/assets/images/logo.png",
+          "telephone": "+34957547106",
+          "email": "cmcayuelas@gmail.com",
+          "foundingDate": "1999",
+          "priceRange": "$",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Pol\u00edgono Industrial La Salinilla, nave 17",
+            "addressLocality": "Priego de C\u00f3rdoba",
+            "addressRegion": "C\u00f3rdoba",
+            "postalCode": "14800",
+            "addressCountry": "ES"
+          },
+          "areaServed": [
+            {
+              "@type": "AdministrativeArea",
+              "name": "Subb\u00e9tica Cordobesa"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Provincia de C\u00f3rdoba"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "Andaluc\u00eda"
+            }
+          ],
+          "sameAs": [
+            "https://www.instagram.com/carpinteria_metalica_cayuelas_",
+            "https://es-es.facebook.com/carpinteriametalicacayuelas.canalejo"
+          ]
+        },
+        {
+          "@type": "CollectionPage",
+          "@id": "https://carpinteriametalicacayuelas.es/galeria/#page",
+          "url": "https://carpinteriametalicacayuelas.es/galeria/",
+          "name": "Galer\u00eda de trabajos \u2014 Carpinter\u00eda Met\u00e1lica Cayuelas",
+          "description": "Galer\u00eda de trabajos: cancelas, forja y aluminio fabricados e instalados por Carpinter\u00eda Met\u00e1lica Cayuelas en Priego de C\u00f3rdoba y la Subb\u00e9tica.",
+          "isPartOf": {
+            "@id": "https://carpinteriametalicacayuelas.es/#business"
+          },
+          "inLanguage": "es-ES"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Inicio",
+              "item": "https://carpinteriametalicacayuelas.es/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Galer\u00eda",
+              "item": "https://carpinteriametalicacayuelas.es/galeria/"
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+  </head>
+  <body class="page">
+
+    <header class="hdr" data-sticky data-screen-label="Gallery · Header">
+      <div class="container-wide">
+        <a href="../" class="cay-logo" aria-label="Carpintería Metálica Cayuelas">
+          <span class="plaque"></span>
+          <span class="wordmark"><span class="name">Cayuelas</span><span class="sub">Hierro y aluminio</span></span>
+        </a>
+        <nav class="nav">
+          <a href="../">Inicio</a>
+          <a href="../servicios/">Servicios</a>
+          <a href="../galeria/" class="active">Galería</a>
+          <a href="../contacto/">Contacto</a>
+        </nav>
+        <a href="tel:957547106" class="phone"><i class="fa-solid fa-phone" aria-hidden="true"></i> 957 54 71 06</a>
+        <a href="../contacto/" class="btn btn-primary">Pide presupuesto</a>
+      </div>
+    </header>
+
+    <!-- Page hero -->
+    <section class="page-hero" data-screen-label="Gallery · Page hero">
+      <div class="container">
+        <div class="crumbs"><a href="../">Inicio</a><span>/</span>Galería</div>
+        <span class="eyebrow">Nuestros trabajos</span>
+        <h1>Cancelas, forja y aluminio <em>reales</em></h1>
+        <p class="lead">Una muestra de proyectos fabricados e instalados por la Subbética Cordobesa y toda Andalucía.</p>
+        <span class="forja-divider"></span>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="gal">
+      <div class="container">
+        <div class="filters reveal">
+          <button class="active" data-cat="all">Todo</button>
+          <button data-cat="cancelas">Cancelas</button>
+          <button data-cat="forja">Forja</button>
+          <button data-cat="aluminio">Aluminio</button>
+        </div>
+        <div class="masonry" id="masonry">
+          <div class="item h-l" data-cat="cancelas"><div class="ph" data-label="Gate"></div><div class="cap"><span class="t">Cancela corredera</span><span class="tag">Cancelas</span></div></div>
+          <div class="item h-s" data-cat="aluminio"><div class="ph" data-label="Large window"></div><div class="cap"><span class="t">Ventanal corredero</span><span class="tag">Aluminio</span></div></div>
+          <div class="item h-m" data-cat="forja"><div class="ph" data-label="Forgework"></div><div class="cap"><span class="t">Detalle ornamental</span><span class="tag">Forja</span></div></div>
+          <div class="item h-m" data-cat="cancelas"><div class="ph" data-label="Security bar"></div><div class="cap"><span class="t">Reja de seguridad</span><span class="tag">Cancelas</span></div></div>
+          <div class="item h-l" data-cat="aluminio"><div class="ph" data-label="Shower screen"></div><div class="cap"><span class="t">Mampara de ducha</span><span class="tag">Aluminio</span></div></div>
+          <div class="item h-s" data-cat="forja"><div class="ph" data-label="Railing"></div><div class="cap"><span class="t">Barandilla de forja</span><span class="tag">Forja</span></div></div>
+          <div class="item h-m" data-cat="aluminio"><div class="ph" data-label="Mallorquina shutter"></div><div class="cap"><span class="t">Mallorquina</span><span class="tag">Aluminio</span></div></div>
+          <div class="item h-s" data-cat="cancelas"><div class="ph" data-label="Pedestrian door"></div><div class="cap"><span class="t">Puerta peatonal</span><span class="tag">Cancelas</span></div></div>
+          <div class="item h-l" data-cat="forja"><div class="ph" data-label="Artisan bar"></div><div class="cap"><span class="t">Reja artesanal</span><span class="tag">Forja</span></div></div>
+          <div class="item h-m" data-cat="cancelas"><div class="ph" data-label="Fence"></div><div class="cap"><span class="t">Vallado de finca</span><span class="tag">Cancelas</span></div></div>
+          <div class="item h-s" data-cat="aluminio"><div class="ph" data-label="Blind"></div><div class="cap"><span class="t">Persiana de aluminio</span><span class="tag">Aluminio</span></div></div>
+          <div class="item h-m" data-cat="forja"><div class="ph" data-label="Forged piece"></div><div class="cap"><span class="t">Pieza ornamental</span><span class="tag">Forja</span></div></div>
+        </div>
+        <p class="note">Las imágenes son provisionales — aquí irán fotos reales de tus trabajos.</p>
+      </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="cta">
+      <div class="container">
+        <div class="inner">
+          <div class="reveal">
+            <span class="forja-divider" style="justify-content:flex-start; margin-bottom:22px; color: var(--cay-ink-400);"></span>
+            <h2>¿Te gusta lo que ves? <em>Hagamos el tuyo.</em></h2>
+            <p>Cuéntanos tu idea y te damos precio sin compromiso. Trabajamos en la Subbética Cordobesa y toda Andalucía.</p>
+          </div>
+          <div class="cta-phones reveal">
+            <a href="tel:957547106"><span class="ic"><i class="fa-solid fa-phone" aria-hidden="true"></i></span><span><span class="t">Taller</span><br><span class="n">957 54 71 06</span></span></a>
+            <a href="tel:658767399"><span class="ic"><i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i></span><span><span class="t">Móvil</span><br><span class="n">658 76 73 99</span></span></a>
+            <a href="mailto:cmcayuelas@gmail.com" style="background:var(--cay-yellow-500);border-color:var(--cay-yellow-500);color:var(--cay-black-900);justify-content:center;font-weight:var(--fw-bold);"><i class="fa-solid fa-envelope" aria-hidden="true"></i> cmcayuelas@gmail.com</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="ft" data-footer></footer>
+
+    <script src="../assets/js/main.js"></script>
+    <script>window.CMC_BASE="../";</script>
+    <script src="../assets/js/footer.js"></script>
+    <script>
+      (function(){
+      const btns = document.querySelectorAll('.filters button');
+      const items = document.querySelectorAll('#masonry .item');
+      btns.forEach(b => b.addEventListener('click', () => {
+      btns.forEach(x => x.classList.remove('active'));
+      b.classList.add('active');
+      const cat = b.dataset.cat;
+      items.forEach(it => it.classList.toggle('hide', cat !== 'all' && it.dataset.cat !== cat));
+      }));
+      })();
+    </script>
+  </body>
+</html>

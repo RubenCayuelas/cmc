@@ -1,0 +1,195 @@
+/* =========================================================
+   Carpintería Metálica Cayuelas — brand system
+   Type structure and scale inherited from the Nazaríes system,
+   RECOLORED to the Cayuelas sign palette:
+   iron black · golden yellow · script red.
+   ========================================================= */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600;1,700&family=JetBrains+Mono:wght@400;500;600&display=swap");
+
+:root {
+  /* ---- Brand: golden yellow (sign background) ---- */
+  --cay-yellow-50:  #FFF9E6;
+  --cay-yellow-100: #FFF1C2;
+  --cay-yellow-200: #FFE585;
+  --cay-yellow-300: #FFD94A;
+  --cay-yellow-400: #FFCF1F;
+  --cay-yellow-500: #FFCC0A;   /* ★ brand yellow */
+  --cay-yellow-600: #E3B100;
+  --cay-yellow-700: #B58C00;
+  --cay-yellow-800: #806200;
+
+  /* ---- Action: script red "Cayuelas" ---- */
+  --cay-red-400: #E2453A;
+  --cay-red-500: #C8281C;   /* ★ brand red */
+  --cay-red-600: #A81E14;
+  --cay-red-700: #87160E;
+
+  /* ---- Structure: iron black ---- */
+  --cay-black-900: #0E0E0F;
+  --cay-black-800: #161617;   /* ★ iron black */
+  --cay-black-700: #232325;
+  --cay-black-600: #34343700;
+
+  /* ---- Neutrals (warm, to pair with gold) ---- */
+  --cay-ink-900: #17171A;   /* headings */
+  --cay-ink-700: #33333A;   /* body */
+  --cay-ink-500: #6A6A72;   /* muted body */
+  --cay-ink-400: #97978F;   /* meta */
+  --cay-ink-300: #C9C7BE;   /* strong dividers */
+  --cay-ink-200: #E6E3DA;   /* hairlines */
+  --cay-ink-100: #F2F0E8;   /* subtle background */
+  --cay-paper:   #FFFFFF;
+  --cay-cream:   #F7F3E8;   /* warm editorial cream */
+  --cay-steel:   #2B2D30;   /* dark steel surface */
+
+  /* ---- Semantic ---- */
+  --color-bg:            var(--cay-paper);
+  --color-bg-cream:      var(--cay-cream);
+  --color-bg-inverse:    var(--cay-black-800);
+  --color-fg:            var(--cay-ink-900);
+  --color-fg-muted:      var(--cay-ink-500);
+  --color-fg-subtle:     var(--cay-ink-400);
+  --color-fg-inverse:    #FFFFFF;
+  --color-border:        var(--cay-ink-200);
+  --color-border-strong: var(--cay-ink-300);
+  --color-primary:       var(--cay-red-500);
+  --color-primary-hover: var(--cay-red-600);
+  --color-primary-press: var(--cay-red-700);
+  --color-on-primary:    #FFFFFF;
+  --color-brand:         var(--cay-yellow-500);
+  --color-link:          var(--cay-red-600);
+  --color-focus-ring:    color-mix(in oklch, var(--cay-red-500) 55%, transparent);
+
+  /* ---- Typography ---- */
+  --font-sans:    "Poppins", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono:    "JetBrains Mono", ui-monospace, Menlo, Consolas, monospace;
+  --fw-light: 300; --fw-regular: 400; --fw-medium: 500;
+  --fw-semibold: 600; --fw-bold: 700; --fw-black: 800;
+
+  --fs-xs: 12px; --fs-sm: 14px; --fs-base: 16px; --fs-md: 18px;
+  --fs-lg: 20px; --fs-xl: 24px; --fs-2xl: 30px; --fs-3xl: 38px;
+  --fs-4xl: 48px; --fs-5xl: 64px; --fs-6xl: 84px; --fs-7xl: 108px;
+
+  --lh-tight: 1.05; --lh-snug: 1.2; --lh-normal: 1.45; --lh-relaxed: 1.6;
+  --ls-display: -0.02em; --ls-heading: -0.01em; --ls-eyebrow: 0.18em;
+
+  /* ---- Spacing ---- */
+  --space-1: 4px;  --space-2: 8px;  --space-3: 12px; --space-4: 16px;
+  --space-5: 20px; --space-6: 24px; --space-8: 32px; --space-10: 40px;
+  --space-12: 48px; --space-16: 64px; --space-20: 80px; --space-24: 96px;
+  --space-32: 128px; --space-40: 160px;
+  --container-max: 1280px; --container-narrow: 960px; --container-wide: 1440px;
+  --gutter: clamp(20px, 4vw, 48px);
+
+  /* ---- Border radius ---- */
+  --radius-xs: 4px; --radius-sm: 8px; --radius-md: 12px;
+  --radius-lg: 16px; --radius-xl: 24px; --radius-2xl: 32px; --radius-pill: 999px;
+
+  /* ---- Shadows ---- */
+  --shadow-xs: 0 1px 2px rgba(14,14,15,.06);
+  --shadow-sm: 0 2px 6px rgba(14,14,15,.07), 0 1px 2px rgba(14,14,15,.05);
+  --shadow-md: 0 10px 22px rgba(14,14,15,.10), 0 2px 5px rgba(14,14,15,.05);
+  --shadow-lg: 0 20px 44px rgba(14,14,15,.13), 0 5px 10px rgba(14,14,15,.06);
+  --shadow-xl: 0 30px 64px rgba(14,14,15,.18);
+  --shadow-gold: 0 12px 28px rgba(255,204,10,.34);
+  --shadow-red:  0 12px 26px rgba(200,40,28,.30);
+
+  /* ---- Motion ---- */
+  --ease-standard: cubic-bezier(.2,0,0,1);
+  --dur-1: 120ms; --dur-2: 200ms; --dur-3: 320ms; --dur-4: 520ms;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: var(--fs-base);
+  line-height: var(--lh-relaxed);
+  color: var(--color-fg);
+  background: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+h1,h2,h3,h4,h5 { margin: 0; }
+p { margin: 0; }
+:where(a,button,input,select,textarea,[tabindex]):focus-visible {
+  outline: 2px solid var(--color-primary); outline-offset: 3px; border-radius: var(--radius-sm);
+}
+
+/* ---------- Utility typography ---------- */
+.eyebrow {
+  font-weight: var(--fw-semibold); font-size: var(--fs-sm);
+  letter-spacing: var(--ls-eyebrow); text-transform: uppercase;
+  color: var(--color-fg-muted);
+}
+.container { max-width: var(--container-max); margin: 0 auto; padding-inline: var(--gutter); }
+.container-narrow { max-width: var(--container-narrow); margin: 0 auto; padding-inline: var(--gutter); }
+.container-wide { max-width: var(--container-wide); margin: 0 auto; padding-inline: var(--gutter); }
+
+/* ---------- Buttons ---------- */
+.btn {
+  display: inline-flex; align-items: center; gap: .55em;
+  font-family: var(--font-sans); font-weight: var(--fw-semibold);
+  font-size: var(--fs-base); line-height: 1; cursor: pointer;
+  padding: 16px 26px; border-radius: var(--radius-pill);
+  border: 2px solid transparent; transition: all var(--dur-2) var(--ease-standard);
+  text-decoration: none; white-space: nowrap;
+}
+.btn-primary { background: var(--color-primary); color: var(--color-on-primary); }
+.btn-primary:hover { background: var(--color-primary-hover); transform: translateY(-2px); box-shadow: var(--shadow-red); }
+.btn-primary:active { background: var(--color-primary-press); transform: none; }
+.btn-gold { background: var(--cay-yellow-500); color: var(--cay-black-900); }
+.btn-gold:hover { background: var(--cay-yellow-400); transform: translateY(-2px); box-shadow: var(--shadow-gold); }
+.btn-dark { background: var(--cay-black-800); color: #fff; }
+.btn-dark:hover { background: var(--cay-black-700); transform: translateY(-2px); }
+.btn-outline { background: transparent; color: var(--color-fg); border-color: var(--color-border-strong); }
+.btn-outline:hover { border-color: var(--cay-black-800); background: var(--cay-ink-100); }
+.btn-ghost-light { background: transparent; color: #fff; border-color: rgba(255,255,255,.4); }
+.btn-ghost-light:hover { border-color: var(--cay-yellow-500); color: var(--cay-yellow-500); }
+
+/* ---------- Image placeholder ---------- */
+.ph {
+  position: relative; background:
+    repeating-linear-gradient(135deg, rgba(0,0,0,.035) 0 14px, transparent 14px 28px),
+    var(--cay-ink-100);
+  display: grid; place-items: center; overflow: hidden; color: var(--cay-ink-400);
+}
+.ph::after {
+  content: attr(data-label);
+  font-size: var(--fs-xs); letter-spacing: .12em; text-transform: uppercase;
+  font-weight: var(--fw-semibold); color: var(--cay-ink-400);
+  display: flex; align-items: center; gap: .5em; text-align: center; padding: 0 1em;
+}
+.ph-dark {
+  background:
+    repeating-linear-gradient(135deg, rgba(255,255,255,.04) 0 14px, transparent 14px 28px),
+    var(--cay-steel);
+  color: rgba(255,255,255,.5);
+}
+.ph-dark::after { color: rgba(255,255,255,.45); }
+
+/* ---------- Brand logo (company sign) ---------- */
+.cay-logo {
+  display: inline-block; width: 178px; height: 54px; flex: none;
+  background-image: url("../images/complete_logo.jpg");
+  background-size: contain; background-position: left center; background-repeat: no-repeat;
+  border-radius: 4px; line-height: 0;
+}
+.cay-logo > * { display: none !important; }   /* hide old lockup, show sign only */
+
+/* ---------- Forja ornament (divider + corners) ---------- */
+.forja-divider {
+  display: flex; align-items: center; justify-content: center; gap: 0; color: var(--cay-black-800);
+}
+.forja-divider svg { height: 26px; width: auto; }
+.forja-divider.gold { color: var(--cay-yellow-600); }
+.forja-divider.light { color: rgba(255,255,255,.7); }
+
+@media (prefers-reduced-motion: no-preference) {
+  .reveal { opacity: 0; transform: translateY(18px); transition: opacity var(--dur-4) var(--ease-standard), transform var(--dur-4) var(--ease-standard); }
+  .reveal.in { opacity: 1; transform: none; }
+}

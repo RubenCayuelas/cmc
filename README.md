@@ -1,15 +1,41 @@
 # Carpintería Metálica Cayuelas
 
-Static corporate website for **Carpintería Metálica Cayuelas**.
+Corporate website for **Carpintería Metálica Cayuelas** — metalwork, forgework and aluminium in Priego de Córdoba.
 
 ## Stack
 
-- Static HTML5, no framework or bundler
-- Compiled CSS (`assets/css/main.css`) based on the [Solid State](https://html5up.net/solid-state) template by HTML5 UP (CC BY 3.0)
-- Custom styles in `assets/css/custom.css`
-- Contact form via [Formspree](https://formspree.io/) (AJAX, ID: `xojrapqa`)
-- Deployed on GitHub Pages
+- Pure **HTML5 / CSS3 / vanilla JS** — no framework, no bundler, no dependencies
+- **Font Awesome 6.5** loaded via CDN JS (`all.min.js`) — icons rendered as inline SVG
+- **Poppins** + **JetBrains Mono** via Google Fonts (imported in `theme.css`)
+- Custom brand system in `assets/css/theme.css` (design tokens, typography, buttons, placeholders)
+- Shared layout in `assets/css/site.css` (header, footer, sections, CTA band)
+- Page-specific styles inlined in each HTML `<style>` block
+
+## Pages
+
+| Page | Path | Description |
+|------|------|-------------|
+| Home | `/` | Hero, services overview, why-us, gallery preview, contact CTA |
+| Services | `/servicios/` | Cancelas y herrería, forja, aluminio y cerramientos |
+| Gallery | `/galeria/` | Filterable masonry photo gallery |
+| Contact | `/contacto/` | Phone, email, address, map |
+
+## SEO
+
+- Canonical URLs, `robots` meta, `author`, `geo.region` / `geo.placename` on all pages
+- Open Graph + Twitter Card on all pages (with `og:image:alt`, `og:image:type`)
+- **JSON-LD structured data** on every page:
+  - `LocalBusiness` (all pages)
+  - `BreadcrumbList` (subpages)
+  - `ContactPage` / `WebPage` / `CollectionPage` (subpages)
+- `sitemap.xml` with priorities and change frequencies
+- `.htaccess` forces HTTPS and provides 301 redirects from legacy `.html` URLs
+
+## Hosting
+
+Apache server. The `.htaccess` handles:
+- `DirectoryIndex index.html`
 
 ## License
 
-The **Solid State** base template is licensed under [Creative Commons Attribution 3.0](https://creativecommons.org/licenses/by/3.0/). Content and modifications are property of Carpintería Metálica Cayuelas.
+Content and code © Carpintería Metálica Cayuelas. All rights reserved.
