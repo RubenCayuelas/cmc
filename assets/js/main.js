@@ -47,7 +47,73 @@
     on(); window.addEventListener('scroll', on, { passive: true });
   }
 
-  function init() { paint(); reveal(); stickyShadow(); }
+  // Mobile navigation: build a hamburger toggle + slide-down drawer from the
+  // existing desktop nav, which is hidden below 900px.
+  function mobileNav() {
+    const hdr = document.querySelector('.hdr');
+    if (!hdr || hdr.querySelector('.nav-toggle')) return;
+    const bar = hdr.querySelector('.container-wide');
+    const nav = hdr.querySelector('.nav');
+    if (!bar || !nav) return;
+
+    const toggle = document.createElement('button');
+    toggle.type = 'button';
+    toggle.className = 'nav-toggle';
+    toggle.setAttribute('aria-label', 'Abrir menú');
+    toggle.setAttribute('aria-expanded', 'false');
+    toggle.setAttribute('aria-controls', 'mobile-nav');
+    toggle.innerHTML = '<span class="bars" aria-hidden="true"></span>';
+    bar.appendChild(toggle);
+
+    const drawer = document.createElement('div');
+    drawer.className = 'mobile-nav';
+    drawer.id = 'mobile-nav';
+
+    const links = document.createElement('nav');
+    links.className = 'mnav-links';
+    links.setAttribute('aria-label', 'Navegación principal');
+    nav.querySelectorAll('a').forEach(a => links.appendChild(a.cloneNode(true)));
+    drawer.appendChild(links);
+
+    const phone = bar.querySelector('.phone');
+    if (phone) {
+      const p = phone.cloneNode(true);
+      p.classList.remove('phone'); p.classList.add('mnav-phone');
+      drawer.appendChild(p);
+    }
+    const cta = bar.querySelector('.btn-primary');
+    if (cta) drawer.appendChild(cta.cloneNode(true));
+
+    hdr.appendChild(drawer);
+
+    const backdrop = document.createElement('div');
+    backdrop.className = 'nav-backdrop';
+    document.body.appendChild(backdrop);
+
+    const isOpen = () => hdr.classList.contains('nav-open');
+    const open = () => {
+      hdr.classList.add('nav-open');
+      backdrop.classList.add('show');
+      toggle.setAttribute('aria-expanded', 'true');
+      toggle.setAttribute('aria-label', 'Cerrar menú');
+      document.body.style.overflow = 'hidden';
+    };
+    const close = () => {
+      hdr.classList.remove('nav-open');
+      backdrop.classList.remove('show');
+      toggle.setAttribute('aria-expanded', 'false');
+      toggle.setAttribute('aria-label', 'Abrir menú');
+      document.body.style.overflow = '';
+    };
+
+    toggle.addEventListener('click', () => isOpen() ? close() : open());
+    backdrop.addEventListener('click', close);
+    drawer.addEventListener('click', e => { if (e.target.closest('a')) close(); });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape' && isOpen()) { close(); toggle.focus(); } });
+    window.addEventListener('resize', () => { if (window.innerWidth > 900 && isOpen()) close(); }, { passive: true });
+  }
+
+  function init() { paint(); reveal(); stickyShadow(); mobileNav(); }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
   else init();
   window.CMC = { paint, reveal };

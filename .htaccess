@@ -1,9 +1,0 @@
-# Carpintería Metálica Cayuelas — Apache server rules
-RewriteEngine On
-
-# Force HTTPS
-RewriteCond %{HTTPS} off
-RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
-
-# Serve index.html for directory requests
-DirectoryIndex index.html

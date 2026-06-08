@@ -5,7 +5,8 @@
    iron black · golden yellow · script red.
    ========================================================= */
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600;1,700&family=JetBrains+Mono:wght@400;500;600&display=swap");
+/* Fonts are loaded via <link rel="preconnect"> + <link rel="stylesheet">
+   in each page <head> (faster than @import, which blocks serially). */
 
 :root {
   /* ---- Brand: golden yellow (sign background) ---- */
