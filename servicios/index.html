@@ -34,43 +34,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="../assets/css/theme.css">
     <link rel="stylesheet" href="../assets/css/site.css">
-    <style>
-      /* ===================== SERVICES ===================== */
-      .svcrow { padding-block: clamp(44px, 6vw, 84px); scroll-margin-top: 90px; }
-      .svcrow .wrap { display:grid; grid-template-columns: 1fr 1fr; gap: clamp(32px,5vw,72px); align-items:center; }
-      #cancelas { background: var(--cay-paper); }
-      #forja { background: var(--cay-cream); }
-      #forja .media { order: 2; }
-      #aluminio { background: var(--cay-paper); }
-      .svcrow .media { position: relative; }
-      .svcrow .media .ph { aspect-ratio: 4/3; border-radius: var(--radius-xl); box-shadow: var(--shadow-lg); }
-      .svcrow .media .badge { position:absolute; left:-14px; top:24px; background: var(--cay-yellow-500); color: var(--cay-black-900); font-weight: var(--fw-bold); font-size: var(--fs-sm); padding: 10px 16px; border-radius: var(--radius-md); box-shadow: var(--shadow-md); }
-      .svcrow .num { font-family: var(--font-mono); color: var(--cay-red-500); font-size: var(--fs-sm); letter-spacing:.1em; font-weight: var(--fw-semibold); }
-      .svcrow h2 { font-weight: var(--fw-black); font-size: clamp(28px,3.4vw,44px); color: var(--cay-black-900); letter-spacing: var(--ls-heading); margin: 10px 0 16px; }
-      .svcrow p.intro { color: var(--cay-ink-700); font-size: var(--fs-md); }
-      .svcrow ul.feat { list-style:none; margin: 22px 0 0; padding:0; display:grid; grid-template-columns: 1fr 1fr; gap: 12px 22px; }
-      .svcrow ul.feat li { display:flex; gap:10px; align-items:flex-start; color: var(--cay-ink-700); }
-      .svcrow ul.feat li svg { color: var(--cay-red-500); flex:none; margin-top: 3px; }
-      .svcrow .actions { margin-top: 28px; }
-      /* Process */
-      .proc { padding-block: clamp(48px,6vw,88px); background: var(--cay-cream); }
-      .proc-grid { display:grid; grid-template-columns: repeat(4,1fr); gap: 20px; counter-reset: step; }
-      .pcard { background:#fff; border:1px solid var(--color-border); border-radius: var(--radius-lg); padding: 28px 24px; position:relative; }
-      .pcard .step { counter-increment: step; width:40px; height:40px; border-radius:50%; background: var(--cay-black-800); color: var(--cay-yellow-500); display:grid; place-items:center; font-weight: var(--fw-bold); margin-bottom: 16px; }
-      .pcard .step::before { content: counter(step); }
-      .pcard h4 { font-size: var(--fs-lg); font-weight: var(--fw-bold); color: var(--cay-black-900); }
-      .pcard p { color: var(--cay-ink-500); font-size: var(--fs-base); margin-top: 8px; }
-      @media (max-width: 900px) {
-      .svcrow .wrap { grid-template-columns: 1fr; }
-      #forja .media { order: 0; }
-      .svcrow .media { order:-1; }
-      .svcrow ul.feat { grid-template-columns: 1fr; }
-      .proc-grid { grid-template-columns: 1fr 1fr; }
-      }
-      @media (max-width: 560px) {
-      .proc-grid { grid-template-columns: 1fr; }
-      }
-    </style>
+    <link rel="stylesheet" href="../assets/css/servicios.css">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",

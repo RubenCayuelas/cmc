@@ -66,6 +66,20 @@
 .ft .row i { color: var(--cay-yellow-500); flex:none; margin-top:3px; font-size: 14px; }
 .ft-bottom { border-top:1px solid rgba(255,255,255,.12); margin-top: 40px; padding-top: 22px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; font-size: var(--fs-xs); color: rgba(255,255,255,.5); }
 
+/* ---------- Feature cards (why-us cards on home + process steps on services) ---------- */
+.wcard, .pcard { background:#fff; border:1px solid var(--color-border); border-radius: var(--radius-lg); padding: 28px 24px; }
+.pcard { position: relative; }
+.wcard h4, .pcard h4 { font-size: var(--fs-lg); font-weight: var(--fw-bold); color: var(--cay-black-900); }
+.wcard p, .pcard p { color: var(--cay-ink-500); font-size: var(--fs-base); margin-top: 8px; }
+
+/* ---------- Icon badge (dark chip with brand-yellow glyph) ---------- */
+.wcard .ic, .pcard .step, .ccard .ic { display:grid; place-items:center; background: var(--cay-black-800); color: var(--cay-yellow-500); }
+.wcard .ic, .pcard .step { border-radius:50%; margin-bottom:16px; }
+.wcard .ic { width:48px; height:48px; }
+.pcard .step { width:40px; height:40px; counter-increment: step; font-weight: var(--fw-bold); }
+.pcard .step::before { content: counter(step); }
+.ccard .ic { width:48px; height:48px; flex:none; border-radius:12px; }
+
 /* ---------- Mobile navigation (toggle + drawer injected by main.js) ---------- */
 .nav-toggle { display: none; align-items: center; justify-content: center; width: 46px; height: 46px; flex: none; padding: 0; background: transparent; border: 1.5px solid var(--color-border-strong); border-radius: var(--radius-md); cursor: pointer; transition: border-color var(--dur-2), background var(--dur-2); }
 .nav-toggle:hover { border-color: var(--cay-black-800); }

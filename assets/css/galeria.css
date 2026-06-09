@@ -1,0 +1,29 @@
+/* =========================================================
+   CMC — galeria.css
+   Gallery page: category filter pills + masonry photo grid.
+   Requires theme.css + site.css.
+   ========================================================= */
+
+.gal { padding-block: clamp(40px,5vw,72px); }
+
+.filters { display:flex; gap:10px; justify-content:center; flex-wrap:wrap; margin-bottom: 34px; }
+.filters button { font-family: var(--font-sans); font-weight: var(--fw-semibold); font-size: var(--fs-sm); padding: 10px 20px; border-radius: var(--radius-pill); border:1.5px solid var(--color-border-strong); background:#fff; color: var(--cay-ink-700); cursor:pointer; transition: all var(--dur-2); }
+.filters button:hover { border-color: var(--cay-black-800); }
+.filters button.active { background: var(--cay-black-900); color:#fff; border-color: var(--cay-black-900); }
+
+.masonry { columns: 3; column-gap: 16px; }
+.masonry .item { break-inside: avoid; margin-bottom: 16px; border-radius: var(--radius-lg); overflow:hidden; position:relative; }
+.masonry .item .ph { width:100%; }
+.masonry .item.h-s .ph { aspect-ratio: 4/3; }
+.masonry .item.h-m .ph { aspect-ratio: 1/1; }
+.masonry .item.h-l .ph { aspect-ratio: 3/4; }
+.masonry .item .cap { position:absolute; left:0; right:0; bottom:0; padding: 16px; background: linear-gradient(transparent, rgba(14,14,15,.78)); color:#fff; opacity:0; transition: opacity var(--dur-2); display:flex; align-items:center; justify-content:space-between; gap:8px; }
+.masonry .item:hover .cap { opacity:1; }
+.masonry .item .cap .t { font-weight: var(--fw-semibold); }
+.masonry .item .cap .tag { font-size: var(--fs-xs); color: var(--cay-yellow-500); text-transform:uppercase; letter-spacing:.1em; }
+.masonry .item.hide { display:none; }
+
+.note { text-align:center; color: var(--cay-ink-400); font-size: var(--fs-sm); margin-top: 32px; }
+
+@media (max-width: 900px) { .masonry { columns: 2; } }
+@media (max-width: 560px) { .masonry { columns: 1; } }

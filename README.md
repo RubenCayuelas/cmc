@@ -6,10 +6,10 @@ Corporate website for **Carpintería Metálica Cayuelas** — metalwork, forgewo
 
 - Pure **HTML5 / CSS3 / vanilla JS** — no framework, no bundler, no dependencies
 - **Font Awesome 6.5** loaded via CDN CSS (`all.min.css`) — icons rendered as web font
-- **Poppins** + **JetBrains Mono** via Google Fonts (imported in `theme.css`)
+- **Poppins** + **JetBrains Mono** via Google Fonts (`<link>` in each page `<head>`)
 - Custom brand system in `assets/css/theme.css` (design tokens, typography, buttons, placeholders)
-- Shared layout in `assets/css/site.css` (header, footer, sections, CTA band)
-- Page-specific styles inlined in each HTML `<style>` block
+- Shared layout/components in `assets/css/site.css` (header, footer, sections, CTA band, feature cards, icon badges, mobile nav)
+- Page-specific styles in dedicated files: `home.css`, `servicios.css`, `galeria.css`, `contacto.css` (linked per page)
 
 ## Pages
 
