@@ -1,6 +1,6 @@
 # Carpintería Metálica Cayuelas
 
-Corporate website for **Carpintería Metálica Cayuelas** — metalwork, forgework and aluminium in Priego de Córdoba.
+Corporate website for **Carpintería Metálica Cayuelas**
 
 ## Stack
 
@@ -32,6 +32,3 @@ Corporate website for **Carpintería Metálica Cayuelas** — metalwork, forgewo
 - Fonts loaded via `<link rel="preconnect">` + stylesheet (not CSS `@import`); Font Awesome via CSS
 - `theme-color` meta on all pages
 
-## License
-
-Content and code © Carpintería Metálica Cayuelas. All rights reserved.
