@@ -11,7 +11,7 @@
           <span class="plaque"></span>
           <span class="wordmark"><span class="name">Cayuelas</span><span class="sub">Hierro y aluminio</span></span>
         </span>
-        <p class="desc">Carpintería metálica de hierro y aluminio Cayuelas en Priego de Córdoba desde 1999. Diseño, fabricación e instalación a medida en la Subbética Cordobesa y toda Andalucía.</p>
+        <p class="desc">Carpintería metálica de hierro y aluminio Cayuelas en Priego de Córdoba. Diseño, fabricación e instalación a medida en la Subbética Cordobesa y toda Andalucía.</p>
         <div class="ic-row">
           <a href="${IG}" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
           <a href="${FB}" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
@@ -23,7 +23,7 @@
           <li><a href="${BASE_URL}servicios/#cancelas">Cancelas y herrería</a></li>
           <li><a href="${BASE_URL}servicios/#forja">Forja</a></li>
           <li><a href="${BASE_URL}servicios/#aluminio">Aluminio y cerramientos</a></li>
-          <li><a href="${BASE_URL}servicios/#aluminio">Mamparas de baño</a></li>
+          <li><a href="${BASE_URL}servicios/#cerrajeria">Cerrajería</a></li>
         </ul>
       </div>
       <div>
@@ -45,7 +45,7 @@
     </div>
     <div class="ft-bottom">
       <span>© 2026 Carpintería Metálica Cayuelas</span>
-      <span>Priego de Córdoba · Subbética Cordobesa · Andalucía</span>
+      <span>Priego de Córdoba · Andalucía</span>
     </div>
   </div>`;
   function init(){

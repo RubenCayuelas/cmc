@@ -66,12 +66,60 @@
 .ft .row i { color: var(--cay-yellow-500); flex:none; margin-top:3px; font-size: 14px; }
 .ft-bottom { border-top:1px solid rgba(255,255,255,.12); margin-top: 40px; padding-top: 22px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; font-size: var(--fs-xs); color: rgba(255,255,255,.5); }
 
+/* ---------- Feature cards (why-us cards on home + process steps on services) ---------- */
+.wcard, .pcard { background:#fff; border:1px solid var(--color-border); border-radius: var(--radius-lg); padding: 28px 24px; }
+.pcard { position: relative; }
+.wcard h4, .pcard h4 { font-size: var(--fs-lg); font-weight: var(--fw-bold); color: var(--cay-black-900); }
+.wcard p, .pcard p { color: var(--cay-ink-500); font-size: var(--fs-base); margin-top: 8px; }
+
+/* ---------- Icon badge (dark chip with brand-yellow glyph) ---------- */
+.wcard .ic, .pcard .step, .ccard .ic { display:grid; place-items:center; background: var(--cay-black-800); color: var(--cay-yellow-500); }
+.wcard .ic, .pcard .step { border-radius:50%; margin-bottom:16px; }
+.wcard .ic { width:48px; height:48px; }
+.pcard .step { width:40px; height:40px; counter-increment: step; font-weight: var(--fw-bold); }
+.pcard .step::before { content: counter(step); }
+.ccard .ic { width:48px; height:48px; flex:none; border-radius:12px; }
+
+/* ---------- Mobile navigation (toggle + drawer injected by main.js) ---------- */
+.nav-toggle { display: none; align-items: center; justify-content: center; width: 46px; height: 46px; flex: none; padding: 0; background: transparent; border: 1.5px solid var(--color-border-strong); border-radius: var(--radius-md); cursor: pointer; transition: border-color var(--dur-2), background var(--dur-2); }
+.nav-toggle:hover { border-color: var(--cay-black-800); }
+.nav-toggle .bars, .nav-toggle .bars::before, .nav-toggle .bars::after { display: block; width: 22px; height: 2px; border-radius: 2px; background: var(--cay-black-900); transition: transform var(--dur-2) var(--ease-standard), opacity var(--dur-1); }
+.nav-toggle .bars { position: relative; }
+.nav-toggle .bars::before, .nav-toggle .bars::after { content: ""; position: absolute; left: 0; }
+.nav-toggle .bars::before { top: -7px; }
+.nav-toggle .bars::after { top: 7px; }
+.hdr.nav-open .nav-toggle .bars { background: transparent; }
+.hdr.nav-open .nav-toggle .bars::before { transform: translateY(7px) rotate(45deg); }
+.hdr.nav-open .nav-toggle .bars::after { transform: translateY(-7px) rotate(-45deg); }
+
+.mobile-nav { display: none; position: absolute; top: 100%; left: 0; right: 0; background: #fff; border-bottom: 1px solid var(--color-border); box-shadow: var(--shadow-md); padding: 8px var(--gutter) 22px; opacity: 0; visibility: hidden; transform: translateY(-10px); transition: opacity var(--dur-2) var(--ease-standard), transform var(--dur-2) var(--ease-standard), visibility var(--dur-2); }
+.hdr.nav-open .mobile-nav { opacity: 1; visibility: visible; transform: none; }
+.mobile-nav .mnav-links { display: flex; flex-direction: column; }
+.mobile-nav .mnav-links a { padding: 15px 4px; font-size: var(--fs-lg); font-weight: var(--fw-medium); color: var(--cay-ink-700); border-bottom: 1px solid var(--color-border); }
+.mobile-nav .mnav-links a:hover { color: var(--cay-black-900); }
+.mobile-nav .mnav-links a.active { color: var(--cay-red-600); font-weight: var(--fw-semibold); }
+.mobile-nav .mnav-phone { display: inline-flex; align-items: center; gap: 10px; margin-top: 18px; font-weight: var(--fw-semibold); color: var(--cay-black-900); }
+.mobile-nav .mnav-phone i, .mobile-nav .mnav-phone .svg-inline--fa { color: var(--cay-red-500); }
+.mobile-nav .btn { display: flex; width: 100%; justify-content: center; margin-top: 16px; }
+.nav-backdrop { display: none; position: fixed; inset: 0; z-index: 99; background: rgba(14,14,15,.4); opacity: 0; visibility: hidden; transition: opacity var(--dur-2), visibility var(--dur-2); }
+.nav-backdrop.show { opacity: 1; visibility: visible; }
+
+@media (max-width: 1120px) { .nav { gap: 22px; } .hdr .phone { display: none; } }
+
 @media (max-width: 900px) {
   .cta .inner { grid-template-columns: 1fr; }
   .ft-grid { grid-template-columns: 1fr 1fr; }
-  .nav { display:none; }
+  .nav { display: none; }
+  .nav-toggle { display: inline-flex; }
+  .mobile-nav, .nav-backdrop { display: block; }
+  .hdr .container-wide > .btn-primary { margin-left: auto; }
 }
-@media (max-width: 1120px) { .nav { gap: 22px; } .hdr .phone { display:none; } }
+
+@media (max-width: 560px) {
+  .ft-grid { grid-template-columns: 1fr; }
+  .hdr .container-wide > .btn-primary { display: none; }
+  .nav-toggle { margin-left: auto; }
+}
 
 /* ---------- Icons (Font Awesome, SVG rendered via JS) ---------- */
 /* FA-JS replaces <i> with <svg class="svg-inline--fa">; we target both */
