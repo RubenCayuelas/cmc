@@ -23,7 +23,7 @@
           <li><a href="${BASE_URL}servicios/#cancelas">Cancelas y herrería</a></li>
           <li><a href="${BASE_URL}servicios/#forja">Forja</a></li>
           <li><a href="${BASE_URL}servicios/#aluminio">Aluminio y cerramientos</a></li>
-          <li><a href="${BASE_URL}servicios/#aluminio">Mamparas de baño</a></li>
+          <li><a href="${BASE_URL}servicios/#cerrajeria">Cerrajería</a></li>
         </ul>
       </div>
       <div>
