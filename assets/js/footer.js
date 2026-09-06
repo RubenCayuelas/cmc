@@ -38,7 +38,7 @@
         <h5>Contacto</h5>
         <ul>
           <li class="row"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Pol. Ind. La Salinilla, nave 17 · 14800 Priego de Córdoba</li>
-          <li class="row"><i class="fa-solid fa-phone" aria-hidden="true"></i> 957 54 71 06 · 658 76 73 99</li>
+          <li class="row"><i class="fa-solid fa-phone" aria-hidden="true"></i><a href="tel:+34957547106"> 957 54 71 06</a> · <a href="tel:+34658767399"> 658 76 73 99</a></li>
           <li class="row"><i class="fa-solid fa-envelope" aria-hidden="true"></i> cmcayuelas@gmail.com</li>
         </ul>
       </div>
